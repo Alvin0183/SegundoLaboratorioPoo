@@ -18,3 +18,15 @@ C:\Users\cance\OneDrive\Documentos\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\S
 C:\Users\cance\OneDrive\Documentos\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.csproj.CopyComplete
 C:\Users\cance\OneDrive\Documentos\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.exe
 C:\Users\cance\OneDrive\Documentos\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.pdb
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\Segundo_LabPOO.exe.config
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\Segundo_LabPOO.exe
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\Segundo_LabPOO.pdb
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.Form1.resources
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.Vista.FormPersona.resources
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.exe
+C:\Users\Admin\Documents\GitHub\SegundoLaboratorioPoo\Segundo_LabPOO\Segundo_LabPOO\obj\Debug\Segundo_LabPOO.pdb

@@ -30,6 +30,11 @@ namespace Segundo_LabPOO
             ClsPersona clspersona = new ClsPersona();
             clspersona.Guardar(prn);
             clspersona.Guardar(prn);
+
+            MessageBox.Show("Guardado en la base de datos");
+
+            ClsPersona persona = new ClsPersona();
+            clspersona.Guardar(prn);
         }
 
         private void button2_Click(object sender, EventArgs e)
