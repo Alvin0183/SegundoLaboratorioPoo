@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Segundo_LabPOO.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,8 @@ namespace Segundo_LabPOO.Service
 {
     class IPersona 
     {
-        //CRUDE
+        void Guardar(persona persona);
 
-        void Save(IPersona persona );
-
-        List<IPersona> Listardatos();
+        List<persona> ListofDataofTablepersona();
     }
 }
