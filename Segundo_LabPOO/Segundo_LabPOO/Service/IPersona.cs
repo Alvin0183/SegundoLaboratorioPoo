@@ -10,8 +10,8 @@ namespace Segundo_LabPOO.Service
     {
         //CRUDE
 
-        void create(Persona E);
+        void Save(IPersona persona );
 
-        List<Persona > Listardatos();
+        List<IPersona> Listardatos();
     }
 }

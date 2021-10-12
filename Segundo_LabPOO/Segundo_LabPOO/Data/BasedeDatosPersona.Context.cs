@@ -13,10 +13,10 @@ namespace Segundo_LabPOO.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class masterEntities : DbContext
+    public partial class almacendepersonasEntities : DbContext
     {
-        public masterEntities()
-            : base("name=masterEntities")
+        public almacendepersonasEntities()
+            : base("name=almacendepersonasEntities")
         {
         }
     
@@ -25,13 +25,6 @@ namespace Segundo_LabPOO.Data
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<estudiante> estudiante { get; set; }
-        public virtual DbSet<materia> materia { get; set; }
-        public virtual DbSet<notas> notas { get; set; }
-        public virtual DbSet<MSreplication_options> MSreplication_options { get; set; }
-        public virtual DbSet<spt_fallback_db> spt_fallback_db { get; set; }
-        public virtual DbSet<spt_fallback_dev> spt_fallback_dev { get; set; }
-        public virtual DbSet<spt_fallback_usg> spt_fallback_usg { get; set; }
-        public virtual DbSet<spt_monitor> spt_monitor { get; set; }
+        public virtual DbSet<persona> persona { get; set; }
     }
 }
