@@ -83,12 +83,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ClsRPersona.cs" />
-    <Compile Include="Service\FormPersona.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Service\FormPersona.Designer.cs">
-      <DependentUpon>FormPersona.cs</DependentUpon>
-    </Compile>
     <Compile Include="Service\IPersona.cs" />
     <Compile Include="Vista\FormPersona.cs">
       <SubType>Form</SubType>
@@ -108,9 +102,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Service\FormPersona.resx">
-      <DependentUpon>FormPersona.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Vista\FormPersona.resx">
       <DependentUpon>FormPersona.cs</DependentUpon>
     </EmbeddedResource>

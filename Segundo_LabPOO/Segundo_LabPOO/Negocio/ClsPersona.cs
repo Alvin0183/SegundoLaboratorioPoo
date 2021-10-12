@@ -10,7 +10,7 @@ namespace Segundo_LabPOO.Negocio
     class ClsPersona
     {
 
-        public persona GUARDADON(persona pers)
+        public persona Guardar(persona pers)
         {
             guardar(pers);
             return null;
@@ -22,5 +22,8 @@ namespace Segundo_LabPOO.Negocio
 
         }
 
+        
+        
+        
     }
 }
