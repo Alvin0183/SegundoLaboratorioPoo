@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Segundo_LabPOO.Data;
+using Segundo_LabPOO.Negocio;
+using Segundo_LabPOO.Repository;
+using Segundo_LabPOO.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,11 +25,11 @@ namespace Segundo_LabPOO
         {
             persona prn = new persona();
             prn.nombrePersona = txtnombre.Text;
-            prn.descripcionPersona = txtdescipcion.Text;
+            prn.descripcionPersona = txtdescripcion.Text;
             prn.edadPersona = int.Parse(txtedad.Text);
-            Clspersona clspersona = new Clspersona();
-            clspersona.GUARDADON(prn);
-            clspersona.guardar(prn);
+            ClsPersona clspersona = new ClsPersona();
+            clspersona.Guardar(prn);
+            clspersona.Guardar(prn);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -33,6 +37,21 @@ namespace Segundo_LabPOO
 
             FormPersona frmpersona = new FormPersona();
             frmpersona.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdescripcion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,9 +11,9 @@ namespace Segundo_LabPOO.Repository
     class ClsRPersona
     {
 
-        public void guardar(persona persona)
+        public void Guardar(persona persona)
         {
-            using (almacendepersonasEntities conexiombd = new almacendepersonasEntities())
+            using (almacendepersonasEntities1 conexiombd = new almacendepersonasEntities1())
             {
                 try
                 {
@@ -26,17 +26,17 @@ namespace Segundo_LabPOO.Repository
                     {
                         conexiombd.persona.Add(per);
                         conexiombd.SaveChanges();
-                        MessageBox.Show("SE GUARDO CON EXITO");
+                        MessageBox.Show("Los datos fueron registrados exitosamente");
                     }
                     else
                     {
-                        MessageBox.Show("NOSE PUEDE GUARDAR, POR QUE ES MENOR DE EDAD");
+                        MessageBox.Show("Solo se permiten mayores de edad");
                     }
                 }
                 catch (Exception ex)
                 {
 
-                    MessageBox.Show("OCURRIO UN ERROR");
+                    MessageBox.Show("algo salio mal");
                 }
             }
 
@@ -44,7 +44,7 @@ namespace Segundo_LabPOO.Repository
 
         public List<persona> listofDataofTablepersona()
         {
-            using (almacendepersonasEntities conexiombd = new almacendepersonasEntities())
+            using (almacendepersonasEntities1 conexiombd = new almacendepersonasEntities1())
             {
                 List<persona> lista = conexiombd.persona.ToList();
 

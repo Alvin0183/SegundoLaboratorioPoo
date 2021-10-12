@@ -32,11 +32,11 @@ namespace Segundo_LabPOO
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtdescripcion = new System.Windows.Forms.TextBox();
+            this.txtedad = new System.Windows.Forms.TextBox();
+            this.txtguardar = new System.Windows.Forms.Button();
+            this.txtlista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,48 +69,51 @@ namespace Segundo_LabPOO
             this.label3.TabIndex = 2;
             this.label3.Text = "Descripcion";
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtnombre.Location = new System.Drawing.Point(175, 36);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(100, 20);
+            this.txtnombre.TabIndex = 3;
+            this.txtnombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtdescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(175, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtdescripcion.Location = new System.Drawing.Point(175, 158);
+            this.txtdescripcion.Name = "txtdescripcion";
+            this.txtdescripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtdescripcion.TabIndex = 4;
+            this.txtdescripcion.TextChanged += new System.EventHandler(this.txtdescripcion_TextChanged);
             // 
-            // textBox3
+            // txtedad
             // 
-            this.textBox3.Location = new System.Drawing.Point(175, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtedad.Location = new System.Drawing.Point(175, 100);
+            this.txtedad.Name = "txtedad";
+            this.txtedad.Size = new System.Drawing.Size(100, 20);
+            this.txtedad.TabIndex = 5;
+            this.txtedad.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // button1
+            // txtguardar
             // 
-            this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(50, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtguardar.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtguardar.Location = new System.Drawing.Point(50, 232);
+            this.txtguardar.Name = "txtguardar";
+            this.txtguardar.Size = new System.Drawing.Size(82, 23);
+            this.txtguardar.TabIndex = 6;
+            this.txtguardar.Text = "Guardar";
+            this.txtguardar.UseVisualStyleBackColor = true;
+            this.txtguardar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // txtlista
             // 
-            this.button2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(200, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "LISTA";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txtlista.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlista.Location = new System.Drawing.Point(200, 232);
+            this.txtlista.Name = "txtlista";
+            this.txtlista.Size = new System.Drawing.Size(75, 23);
+            this.txtlista.TabIndex = 7;
+            this.txtlista.Text = "LISTA";
+            this.txtlista.UseVisualStyleBackColor = true;
+            this.txtlista.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -118,11 +121,11 @@ namespace Segundo_LabPOO
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(365, 284);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtlista);
+            this.Controls.Add(this.txtguardar);
+            this.Controls.Add(this.txtedad);
+            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -138,11 +141,11 @@ namespace Segundo_LabPOO
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtdescripcion;
+        private System.Windows.Forms.TextBox txtedad;
+        private System.Windows.Forms.Button txtguardar;
+        private System.Windows.Forms.Button txtlista;
     }
 }
 

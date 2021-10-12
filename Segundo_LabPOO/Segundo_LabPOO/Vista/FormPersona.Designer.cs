@@ -29,27 +29,28 @@ namespace Segundo_LabPOO.Vista
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CUADROLIST = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtlistapersonas = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.CUADROLIST)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // CUADROLIST
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CUADROLIST.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CUADROLIST.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Nombre,
             this.Edad,
             this.Descripcion});
-            this.dataGridView1.Location = new System.Drawing.Point(43, 83);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(443, 221);
-            this.dataGridView1.TabIndex = 0;
+            this.CUADROLIST.Location = new System.Drawing.Point(43, 83);
+            this.CUADROLIST.Name = "CUADROLIST";
+            this.CUADROLIST.Size = new System.Drawing.Size(443, 221);
+            this.CUADROLIST.TabIndex = 0;
+            this.CUADROLIST.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CUADROLIST_CellContentClick);
             // 
             // ID
             // 
@@ -71,16 +72,17 @@ namespace Segundo_LabPOO.Vista
             this.Descripcion.HeaderText = "Descripcion";
             this.Descripcion.Name = "Descripcion";
             // 
-            // label1
+            // txtlistapersonas
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 28);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Lista de Personas";
+            this.txtlistapersonas.AutoSize = true;
+            this.txtlistapersonas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtlistapersonas.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlistapersonas.Location = new System.Drawing.Point(43, 32);
+            this.txtlistapersonas.Name = "txtlistapersonas";
+            this.txtlistapersonas.Size = new System.Drawing.Size(157, 28);
+            this.txtlistapersonas.TabIndex = 1;
+            this.txtlistapersonas.Text = "Lista de Personas";
+            this.txtlistapersonas.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormPersona
             // 
@@ -88,11 +90,11 @@ namespace Segundo_LabPOO.Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(543, 316);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtlistapersonas);
+            this.Controls.Add(this.CUADROLIST);
             this.Name = "FormPersona";
             this.Text = "FormPersona";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CUADROLIST)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,11 +102,11 @@ namespace Segundo_LabPOO.Vista
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CUADROLIST;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtlistapersonas;
     }
 }

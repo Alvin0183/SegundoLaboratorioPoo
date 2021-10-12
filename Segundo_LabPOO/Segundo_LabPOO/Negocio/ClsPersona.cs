@@ -1,4 +1,5 @@
 ﻿using Segundo_LabPOO.Data;
+using Segundo_LabPOO.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,17 +8,18 @@ using System.Threading.Tasks;
 
 namespace Segundo_LabPOO.Negocio
 {
-    class ClsPersona
+    class ClsPersona : ClsRPersona
     {
 
-        public persona Guardar(persona pers)
+        public persona guardar(persona pers)
         {
-            guardar(pers);
+            Guardar(pers);
             return null;
         }
         public List<persona> listafinal()
         {
             var list = listofDataofTablepersona();
+            
             return list;
 
         }
