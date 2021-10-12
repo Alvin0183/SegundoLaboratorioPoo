@@ -30,11 +30,11 @@ namespace Segundo_LabPOO.Vista
         private void InitializeComponent()
         {
             this.CUADROLIST = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtlistapersonas = new System.Windows.Forms.Label();
+            this.columna1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columna2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columna3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columna4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CUADROLIST)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,10 +42,10 @@ namespace Segundo_LabPOO.Vista
             // 
             this.CUADROLIST.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CUADROLIST.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Nombre,
-            this.Edad,
-            this.Descripcion});
+            this.columna1,
+            this.columna2,
+            this.columna3,
+            this.columna4});
             this.CUADROLIST.Location = new System.Drawing.Point(43, 83);
             this.CUADROLIST.Name = "CUADROLIST";
             this.CUADROLIST.Size = new System.Drawing.Size(443, 221);
@@ -54,35 +54,35 @@ namespace Segundo_LabPOO.Vista
             // 
             // ID
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
+            this.columna1.HeaderText = "ID";
+            this.columna1.Name = "ID";
             // 
             // Nombre
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
+            this.columna2.HeaderText = "Nombre";
+            this.columna2.Name = "Nombre";
             // 
             // Edad
             // 
-            this.Edad.HeaderText = "Edad";
-            this.Edad.Name = "Edad";
+            this.columna3.HeaderText = "Edad";
+            this.columna3.Name = "Edad";
             // 
             // Descripcion
             // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
+            this.columna4.HeaderText = "Descripcion";
+            this.columna4.Name = "Descripcion";
             // 
             // txtlistapersonas
             // 
-            this.txtlistapersonas.AutoSize = true;
-            this.txtlistapersonas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtlistapersonas.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlistapersonas.Location = new System.Drawing.Point(43, 32);
-            this.txtlistapersonas.Name = "txtlistapersonas";
-            this.txtlistapersonas.Size = new System.Drawing.Size(157, 28);
-            this.txtlistapersonas.TabIndex = 1;
-            this.txtlistapersonas.Text = "Lista de Personas";
-            this.txtlistapersonas.Click += new System.EventHandler(this.label1_Click);
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 32);
+            this.label1.Name = "txtlistapersonas";
+            this.label1.Size = new System.Drawing.Size(157, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Lista de Personas";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // FormPersona
             // 
@@ -90,7 +90,7 @@ namespace Segundo_LabPOO.Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(543, 316);
-            this.Controls.Add(this.txtlistapersonas);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CUADROLIST);
             this.Name = "FormPersona";
             this.Text = "FormPersona";
@@ -103,10 +103,11 @@ namespace Segundo_LabPOO.Vista
         #endregion
 
         private System.Windows.Forms.DataGridView CUADROLIST;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.Label txtlistapersonas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columna1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columna2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columna3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columna4;
+        private System.Windows.Forms.Label label1;
+
     }
 }
