@@ -13,10 +13,10 @@ namespace Segundo_LabPOO.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class almacendepersonasEntities : DbContext
+    public partial class almacendepersonasEntities1 : DbContext
     {
-        public almacendepersonasEntities()
-            : base("name=almacendepersonasEntities")
+        public almacendepersonasEntities1()
+            : base("name=almacendepersonasEntities1")
         {
         }
     
